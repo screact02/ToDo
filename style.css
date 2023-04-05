@@ -21,4 +21,6 @@ button {
   border: 2px solid goldenrod;
   height: 85vh;
   font-size: xx-large;
+  display: flex;
+  justify-content: center ;
 }

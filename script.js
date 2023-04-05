@@ -2,6 +2,11 @@
 
 const userinput = document.getElementById("user-input");
 function addTodo(){
-const todolist = document.getElementById("content");
+const createElement = document.createElement("input");
+createElement.setAttribute("type","checkbox");
+document.getElementById("checkbox").appendChild(createElement);
+
+const todolist = document.getElementById("list");
 todolist.innerText = userinput.value;
 }
+
