@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  width: 100vw;
+  padding: 0;
+  text-align: center;
+}
+
+#container {
+  border: 2px solid purple;
+}
+
+input {
+  font-size: x-large;
+}
+
+button {
+  font-size: xx-large;
+}
+
+#content {
+  border: 2px solid goldenrod;
+  height: 85vh;
+}
