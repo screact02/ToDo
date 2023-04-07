@@ -2,30 +2,35 @@
 
 
 function addTodo(){
-  const userinput = document.getElementById("user-input");
-const createContainer = document.createElement("div");
-createContainer.id= "task";
-createContainer.style = "display:flex";
-createContainer.style = "background-color:gold";
-document.getElementById("content").appendChild(createContainer);
-const createCheckbox = document.createElement("input");
-createCheckbox.setAttribute("type","checkbox");
-document.getElementById("task").appendChild(createCheckbox);
+//creating a container//
+const userinput = document.getElementById("user-input");
+const createDiv = document.createElement("div");
+createDiv.id= "task";
+createDiv.style = "display:flex";
+createDiv.style = "background-color:gold";
+document.getElementById("content").appendChild(createDiv);
 
-const createParagraph = document.createElement("label");
-document.getElementById("task").appendChild(createParagraph);
-createParagraph.style = "margin:0";
-createParagraph.innerText = userinput.value;
+//creating a checkbox//
+const checkbox = document.createElement("input");
+checkbox.setAttribute("type","checkbox");
+document.getElementById("task").appendChild(checkbox);
 
-createCheckbox.onclick = function(){
-  createParagraph.style = "text-decoration-line: line-through";
-  const createRemoveButton = document.createElement("button");
-  createRemoveButton.id = "removeTask";
-  createRemoveButton.setAttribute('value', 'remove task');
-  document.getElementById("task").appendChild(createRemoveButton);
-  createRemoveButton.onclick = function(){
-    createContainer.style = "display:none";
+//creating a label//
+const paragraph = document.createElement("paragraph");
+document.getElementById("task").appendChild(paragraph);
+paragraph.style = "margin:0";
+paragraph.innerText = userinput.value;
 
+//to display the todo task//
+checkbox.onclick = function(){
+paragraph.style = "text-decoration-line: line-through";
+const removeTask = document.createElement("button");
+removeTask.id = "removeTask";
+removeTask.setAttribute('value', 'remove task');
+document.getElementById("task").appendChild(removeTask);
+removeTask.onclick = function(){
+const removeElement = document.getElementById("task");
+removeElement.remove();
   }
 }
 }
