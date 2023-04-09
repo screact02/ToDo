@@ -2,7 +2,7 @@
 ## SimpleTo DO List
 #### This is a To DO List application created using pure HTML, CSS and Javascript
 
-##### View the website [here]([https://screact02.github.io/ToDo/])
+##### View the website [here](https://screact02.github.io/ToDo/)
 
 ### <img width="656" alt="image" src="https://user-images.githubusercontent.com/122413484/230752598-66e385d5-3058-4d6d-b65d-b7cf3efc97da.png">
 
