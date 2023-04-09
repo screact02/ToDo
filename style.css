@@ -3,14 +3,18 @@ body {
   width: 100vw;
   padding: 0;
   text-align: center;
+  background-color: #b6d9ac;
 }
 
-#container {
-  border: 2px solid purple;
+#add {
+  background-color: #a8bbd9;
+  font-size: x-large;
+  border-radius: 40%;
 }
 
 input {
   font-size: x-large;
+  border: 3px solid #000;
 }
 
 button {
@@ -18,7 +22,7 @@ button {
 }
 
 #content {
-  border: 2px solid goldenrod;
+  /* border: 2px solid goldenrod; */
   height: 85vh;
   font-size: xx-large;
   display: flex;
